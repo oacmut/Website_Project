@@ -49,10 +49,8 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
-    background: linear-gradient(90deg, #00c6ff, #ff007a);
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px rgba(255, 0, 122, 0.5);
-    cursor: pointer;
+    display: inline-block;
+    cursor: pointer !important; /* Force pointer cursor */
     transition: text-shadow 0.3s ease;
 }
 
@@ -62,6 +60,43 @@ header {
         0 0 50px rgba(0, 198, 255, 0.6),
         0 0 70px rgba(255, 0, 122, 0.4);
 }
+
+.hero-text h1 .letter {
+    display: inline-block;
+    background: linear-gradient(90deg, #00c6ff, #ff007a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(255, 0, 122, 0.5);
+    animation: slideIn 0.5s ease-out forwards;
+    animation-delay: calc(0.1s * var(--i)); /* Staggered delay for each letter */
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Assign delay to each letter using CSS custom property */
+.hero-text h1 .letter:nth-child(1) { --i: 1; }
+.hero-text h1 .letter:nth-child(2) { --i: 2; }
+.hero-text h1 .letter:nth-child(3) { --i: 3; }
+.hero-text h1 .letter:nth-child(4) { --i: 4; }
+.hero-text h1 .letter:nth-child(5) { --i: 5; }
+.hero-text h1 .letter:nth-child(6) { --i: 6; }
+.hero-text h1 .letter:nth-child(7) { --i: 7; }
+.hero-text h1 .letter:nth-child(8) { --i: 8; }
+.hero-text h1 .letter:nth-child(9) { --i: 9; }
+.hero-text h1 .letter:nth-child(10) { --i: 10; }
+.hero-text h1 .letter:nth-child(11) { --i: 11; }
+.hero-text h1 .letter:nth-child(12) { --i: 12; }
+.hero-text h1 .letter:nth-child(13) { --i: 13; }
+.hero-text h1 .letter:nth-child(14) { --i: 14; }
 
 .hero-text p {
     font-size: 1.8rem;
