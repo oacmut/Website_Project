@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    user-select: none; /* Prevent text selection globally */
 }
 
 body {
@@ -50,7 +51,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
     display: inline-block;
-    cursor: pointer !important; /* Force pointer cursor */
+    cursor: pointer !important;
     transition: text-shadow 0.3s ease;
 }
 
@@ -67,8 +68,9 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 20px rgba(255, 0, 122, 0.5);
+    opacity: 0; /* Start hidden */
     animation: slideIn 0.5s ease-out forwards;
-    animation-delay: calc(0.1s * var(--i)); /* Staggered delay for each letter */
+    animation-delay: calc(0.1s * var(--i));
 }
 
 @keyframes slideIn {
@@ -82,7 +84,7 @@ header {
     }
 }
 
-/* Assign delay to each letter using CSS custom property */
+/* Assign delay to each letter */
 .hero-text h1 .letter:nth-child(1) { --i: 1; }
 .hero-text h1 .letter:nth-child(2) { --i: 2; }
 .hero-text h1 .letter:nth-child(3) { --i: 3; }
@@ -105,7 +107,7 @@ header {
     font-weight: 400;
 }
 
-/* Contact Section with Gradient Transition */
+/* Contact Section */
 .contact-section {
     padding: 100px 20px;
     max-width: 900px;
