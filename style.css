@@ -34,7 +34,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: #e0e0e0;
+    background: #dbdbdb;
     border: 1px solid rgba(160, 160, 160, 0.3);
     transition: background 0.3s ease, filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
     transform: perspective(500px) rotateX(0deg) rotateY(0deg);
@@ -65,6 +65,7 @@ body {
     z-index: 2;
     text-align: center;
     max-width: 450px;
+    padding: 25px;
     animation: fadeIn 1s ease-out;
     cursor: default;
     user-select: none;
@@ -84,24 +85,24 @@ body {
 h1 {
     font-size: 2.5em;
     font-weight: 600;
-    color: #ffffff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    color: #525252;
+
     margin-bottom: 12px;
     letter-spacing: 0.8px;
 }
 
 .bio {
     font-size: 1.2em;
-    color: #ffffff;
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+    color: #525252;
+
     margin-bottom: 10px;
     font-weight: 400;
 }
 
 p {
     font-size: 1em;
-    color: #ffffff;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: #525252;
+
     margin-bottom: 20px;
 }
 
@@ -129,7 +130,6 @@ p {
 
 .footer {
     font-size: 0.95em;
-    color: #ffffff;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: #525252;
     margin-top: 25px;
 }
