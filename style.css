@@ -34,7 +34,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: #e0e0e0;
+    background: #dbdbdb;
     border: 1px solid rgba(160, 160, 160, 0.3);
     transition: background 0.3s ease, filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
     transform: perspective(500px) rotateX(0deg) rotateY(0deg);
@@ -64,19 +64,11 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    background: rgba(255, 255, 255, 0.75); /* Finomabb átlátszóság */
-    padding: 30px 40px;
-    border-radius: 40px; /* Kerekítettebb sarkok */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Mélyebb, lágyabb árnyék */
     max-width: 450px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
     animation: fadeIn 1s ease-out;
     cursor: default;
     user-select: none;
-}
-
-.content:hover {
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fadeIn {
@@ -91,49 +83,53 @@ body {
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 10px;
-    letter-spacing: 0.5px; /* Finom térköz */
+    color: #525252;
+
+    margin-bottom: 12px;
+    letter-spacing: 0.8px;
 }
 
 .bio {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #525252;
+
+    margin-bottom: 10px;
     font-weight: 400;
 }
 
 p {
     font-size: 1em;
-    color: #666;
+    color: #525252;
+
     margin-bottom: 20px;
 }
 
 .links {
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .btn {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
-    background: #3498db; /* Gomb színe */
-    padding: 8px 20px;
-    border-radius: 25px; /* Kerekített gombok */
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    padding: 10px 24px;
+    border-radius: 50px;
     font-weight: 600;
-    margin: 0 10px;
-    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 0 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-    background: #2980b9;
-    transform: scale(1.05); /* Finom nagyítás */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
 .footer {
-    font-size: 0.9em;
-    color: #888;
-    margin-top: 20px;
+    font-size: 0.95em;
+    color: #525252;
+    margin-top: 25px;
 }
