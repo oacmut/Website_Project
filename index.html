@@ -3,34 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balazs Borbely</title>
+    <title>Balázs Borbély</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <canvas id="particles"></canvas>
-    <header>
-        <div class="hero-text">
-            <h1>Balazs Borbely</h1>
-            <p>Welcome to my personal site!</p>
+    <div class="tiles-background"></div>
+    <div class="tiles" id="tiles"></div>
+    <div class="content">
+        <h1>Balázs Borbély</h1>
+        <p class="bio">Welcome to my site!</p>
+        <p>Find my links and contact info below.</p>
+        <div class="links">
+            <a href="https://github.com/oacmut" target="_blank" class="btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/balazsborbely/" target="_blank" class="btn">LinkedIn</a>
         </div>
-    </header>
+        <p class="footer">Email: hello@balazsborbely.com</p>
+    </div>
 
-    <section class="contact-section">
-        <h2>Contact Information</h2>
-        <div class="contact-card">
-            <p>Hi, I’m Balazs Borbely, and this is my page where you can find all my contact details.</p>
-            <p>Email: <a href="mailto:hello@balazsborbely.com">hello@balazsborbely.com</a></p>
-            <p>GitHub: <a href="https://github.com/oacmut" target="_blank">github.com/oacmut</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/" target="_blank">linkedin.com/in/</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Balazs Borbely</p>
-    </footer>
-
-    <script src="particles.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
