@@ -76,10 +76,10 @@ body {
   top: -20px;
   left: -30px;
   right: -30px;
-  bottom: -20px; /* nagyobb “kiterjedés” a blurnek */
+  bottom: -20px;
   background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 20%);
-  backdrop-filter: blur(2px); /* enyhe, de lágy blur */
-  border-radius: 130px; /* még nagyobb radius a sima átmenethez */
+  backdrop-filter: blur(2px);
+  border-radius: 130px;
   z-index: -1;
   pointer-events: none;
 }
